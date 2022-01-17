@@ -5,11 +5,11 @@ class Solution:
         right=len(height)-1
         while left<right:
             width=right-left
-            height=min(height[left], height[right])
+            h=min(height[left], height[right])
             a =width*height
             ans=max(a,ans)
-            lh=height [left]
-            rh=height [right]
+            lh=h [left]
+            rh=h [right]
             if   lh<rh :
                 left+=1
             else:
